@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        
+    <!-- 모든 java파일은 여기에 있다는 의미 -->
+    <context:component-scan base-package="com.bit.project" />
+    
+    <!-- 아래에서 설명하지만 다양한 <bean>을 한번에 가져오는 태그 -->
+    <mvc:annotation-driven />
+        
+     <!-- 위의 dispatcher servlet에 매핑되지 않는 .css 등을 처리하는 방법이 있는 친구를 사용 -->
+    <mvc:default-servlet-handler />
+    
+    <!-- 모든 jsp파일은 해당 경로에 있다는 의미 -->
+    <mvc:view-resolvers>
+        <mvc:jsp prefix="/WEB-INF/views/" />
+        <!-- <beans:property name="suffix" value=".jsp" /> -->
+    </mvc:view-resolvers>
+</beans>
