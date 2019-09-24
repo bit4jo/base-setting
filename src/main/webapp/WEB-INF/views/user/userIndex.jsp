@@ -7,9 +7,9 @@
 </head>
  
 <body>
-
-<c:forEach var="it" items="${list }">
+유제페이지 index
+<%-- <c:forEach var="it" items="${list }">
 ${it.userid }
-</c:forEach>
+</c:forEach> --%>
     
 </body>

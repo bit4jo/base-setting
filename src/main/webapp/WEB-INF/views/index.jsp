@@ -16,6 +16,6 @@
             - ./xxx -> 상대경로 : localhost:8080/aaa/xxx
             - ../xxx -> 이전폴더 : localhost:8080/xxx 
     --%>
-    <a href="boardList">게시판</a>
-    <a href="userList">유저리스트</a>
+    <a href="boardIndex">게시판</a>
+    <a href="userIndex">유저</a>
 </body>
