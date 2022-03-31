@@ -13,7 +13,7 @@
 
 	<!-- 이 친구는 pom.xml식 변수선언이다. ${spring.version}이라고 쓰면 된다. -->
 	<properties>
-		<spring.version>4.1.0.RELEASE</spring.version>
+		<spring.version>5.3.18</spring.version>
 	</properties>
 
 
